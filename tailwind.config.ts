@@ -11,7 +11,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primaryText: "#192735",
+        secondaryText: "#65727d",
+        buttonText: "#e46f6f",
+        list: "#777171"
       },
+      fontFamily: {
+        Caveat_Brush: ["Caveat Brush", 'Arial', 'sans-serif'],
+        Work_Sans: ["Work Sans", 'Arial', 'sans-serif'],
+        Playfair_Display: ["Playfair Display", 'Arial', 'sans-serif'],
+      }
     },
   },
   plugins: [],
