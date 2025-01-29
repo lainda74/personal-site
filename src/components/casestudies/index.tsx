@@ -5,7 +5,7 @@ export default function CaseStudies() {
     <section className="px-10 lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full">
       <div>
         <h6 className="text-md text-secondaryText mb-1">
-          SOME WORK I HAVE DONE
+          Projects Accomplished in My Free Time
         </h6>
         <h2 className="text-5xl font-Playfair_Display font-bold">
           Case Studies

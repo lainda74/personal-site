@@ -10,9 +10,9 @@ export default function Footer() {
       <div className="text-primaryText mt-12 md:mt-0">
         <h3 className="font-bold text-2xl mb-4">diaslalinda@gmail.com</h3>
         <ul className="flex justify-between">
-            <li><a className="underline underline-offset-4 cursor-pointer">Twitter</a></li>
-            <li><a className="underline underline-offset-4 cursor-pointer">Instagram</a></li>
-            <li><a className="underline underline-offset-4 cursor-pointer">LinkedIn</a></li>
+            <li><a href="https://x.com/laliyaD" className="underline underline-offset-4 cursor-pointer" rel="noreferrer" target="_blank">X</a></li>
+            <li><a href="https://www.instagram.com/laliya_d/" className="underline underline-offset-4 cursor-pointer" rel="noreferrer" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/lalindasampath/" className="underline underline-offset-4 cursor-pointer" rel="noreferrer" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
     </section>

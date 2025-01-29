@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "./style.scss";
 // import { IKImage } from "imagekitio-react";
 
 // const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
@@ -9,7 +10,7 @@ import Image from "next/image";
 
 export default function Intro() {
   return (
-    <section className="flex flex-col-reverse lg:flex-row justify-center lg:items-center px-10 lg:px-0 mx-auto lg:px-0 lg:w-4/5 2xl:w-3/5 w-full h-screen">
+    <section className="flex flex-col-reverse lg:flex-row justify-center lg:items-center px-10 lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full h-screen fade-in">
       <div>
         <h1 className="text-6xl mb-4 font-Caveat_Brush">Lalinda Sampath Dias</h1>
         <p className="text-base text-secondaryText font-lightt">At the intersection of development and design. I&apos;m passionate about giving back so I share my learnings on Medium, and play on Dribble. Currently in Singapore. &#127480;&#127468;</p>
