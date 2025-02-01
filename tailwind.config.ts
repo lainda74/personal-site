@@ -17,9 +17,9 @@ export default {
         list: "#777171"
       },
       fontFamily: {
-        Caveat_Brush: ["Caveat Brush", 'Arial', 'sans-serif'],
-        Work_Sans: ["Work Sans", 'Arial', 'sans-serif'],
-        Playfair_Display: ["Playfair Display", 'Arial', 'sans-serif'],
+        Caveat_Brush: "var(--font-caveat)",
+        Work_Sans: "var(--font-worksans)",
+        Playfair_Display: "var(--font-playfair)",
       }
     },
   },
