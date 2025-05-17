@@ -21,6 +21,7 @@ export default function CaseStudies() {
             className="md:pr-2 md:w-1/2 transition-transform duration-300 hover:scale-110 object-cover"
             quality={100}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+            loading="lazy"
           />
           <div className="md:w-1/2 md:pl-8 pt-4 md:pt-0">
             <h6 className="text-2xl font-bold mb-3">RouteSONAR</h6>
@@ -42,6 +43,7 @@ export default function CaseStudies() {
                 width={80}
                 height={20}
                 className="ml-5"
+                loading="lazy"
               />
             </a>
             <div className="grid grid-cols-2 gap-4 mt-3 md:mt-12">
@@ -81,6 +83,7 @@ export default function CaseStudies() {
             height={520}
             className="md:pr-2 md:w-1/2 transition-transform duration-300 hover:scale-110 object-cover"
             quality={100}
+            loading="lazy"
           />
           <div className="md:w-1/2 md:pl-8 pt-4 md:pt-0">
             <h6 className="text-2xl font-bold mb-3">CampMo</h6>
@@ -102,6 +105,7 @@ export default function CaseStudies() {
                 width={80}
                 height={20}
                 className="ml-5"
+                loading="lazy"
               />
             </a>
             <div className="grid grid-cols-2 gap-4 mt-3 md:mt-12">

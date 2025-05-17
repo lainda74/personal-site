@@ -15,27 +15,19 @@ export default function Home() {
         <FadeIn>
           <CaseStudies />
         </FadeIn>
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
         <FadeIn>
           <div className="my-[12rem] motion-safe:animate-fade-in">
             <Experience />
           </div>
         </FadeIn>
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
         <FadeIn>
           <Articles />
         </FadeIn>
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
         <FadeIn>
           <div className="my-[8rem]">
             <About />
           </div>
         </FadeIn>
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
         <FadeIn>
           <div className="mb-[4rem]">
             <Footer />

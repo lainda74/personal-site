@@ -81,6 +81,7 @@ const ArticleItem = ({
       width={80}
       height={80}
       className="w-20 h-20 md:w-20 md:h-20 ml-10"
+      loading="lazy"
     />
   </li>
 );
@@ -95,8 +96,8 @@ export default function Articles() {
           width={1400}
           height={600}
           quality={100}
-          priority
           className="absolute top-0 left-0 w-full h-[35rem] object-cover"
+          loading="lazy"
         />
         <div className="relative z-10 h-full pt-12 mt-[27rem] bg-white lg:w-4/5 2xl:w-3/5 mx-auto px-8">
           <div>

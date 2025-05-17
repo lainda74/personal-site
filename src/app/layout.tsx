@@ -3,6 +3,7 @@ import "./globals.css";
 import { Playfair_Display } from "next/font/google";
 import { Caveat_Brush } from "next/font/google";
 import { Work_Sans } from "next/font/google";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,24 +13,23 @@ export const metadata: Metadata = {
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-playfair", // Define a CSS variable
+  variable: "--font-playfair",
   display: "swap",
 });
 
 const caveat = Caveat_Brush({
   subsets: ["latin"],
   weight: ["400"],
-  variable: "--font-caveat", // Define a CSS variable
+  variable: "--font-caveat",
   display: "swap",
 });
 
 const worksans = Work_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-worksans", // Define a CSS variable
+  variable: "--font-worksans",
   display: "swap",
 });
-
 
 export default function RootLayout({
   children,
@@ -39,10 +39,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Lalinda Dias - Personal Portfolio</title>
       </head>
       <body
         className={`${playfair.variable} ${caveat.variable} ${worksans.variable} font-Work_Sans`}
       >
+        {/* ✅ Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3KRX0CFPJ5"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3KRX0CFPJ5');
+          `}
+        </Script>
+
         {children}
       </body>
     </html>
