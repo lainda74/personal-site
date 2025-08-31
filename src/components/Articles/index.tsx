@@ -89,8 +89,8 @@ const ArticleItem = ({
 export default function Articles() {
   return (
     <section>
-      <div className="relative overflow-hidden bg-fixed bg-center bg-cover">
-        <Image
+      <div className="relative bg-center">
+        {/* <Image
           src="https://ik.imagekit.io/dsmblx6kfve/personal-site/p1_49_PZjkm49bp.jpg?updatedAt=1738397591448"
           alt="Parallax Background"
           width={1400}
@@ -98,8 +98,8 @@ export default function Articles() {
           quality={100}
           className="absolute top-0 left-0 w-full h-[35rem] object-cover"
           loading="lazy"
-        />
-        <div className="relative z-10 h-full pt-12 mt-[27rem] bg-white lg:w-4/5 2xl:w-3/5 mx-auto px-8">
+        /> */}
+        <div className="relative z-10 h-full mt-[8rem] lg:w-4/5 2xl:w-3/5 mx-auto px-8">
           <div>
             <h6 className="text-md text-secondaryText mb-1">I Share</h6>
             <h2 className="text-5xl font-Playfair_Display font-bold">

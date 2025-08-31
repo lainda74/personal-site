@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #f9f6f5;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -16,5 +25,243 @@
 @layer utilities {
   .animate-fade-in {
     animation: fade-in 0.8s ease-out forwards;
+  }
+}
+
+@keyframes fade-and-scale-out {
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-on-scroll {
+  animation-timeline: view();
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.intro-text-animation {
+  animation-name: fade-and-scale-out;
+  animation-range: exit 0% exit 40%;
+}
+
+.intro-image-animation {
+  animation-name: fade-out;
+  animation-range: exit 0% exit 60%;
+}
+
+@keyframes reduce-width {
+  from {
+    width: 100%;
+    border-radius: 0rem;
+  }
+  to {
+    width: 95%;
+    border-radius: 2rem;
+  }
+}
+.intro-section-animation {
+  animation-name: reduce-width;
+  animation-range: exit 0% exit 60%;
+}
+
+@keyframes fade-slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.scroll-text {
+  animation: fade-slide-up linear;
+  animation-timeline: view();
+  animation-range: entry 20% entry 80%;
+  animation-fill-mode: both;
+}
+
+@keyframes diagonal-slide {
+  from {
+    opacity: 0;
+    /* X is fixed (left offset), Y grows with index */
+    transform: translateX(0px) translateY(calc(var(--i) * 12px + 40px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.angled-paragraph {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 2rem;
+}
+
+.angled-paragraph span {
+  display: inline-block;
+  animation-name: diagonal-slide;
+  animation-timing-function: ease-out;
+  animation-duration: auto;
+  animation-fill-mode: both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+@keyframes popup {
+  from {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px) scale(0.2);
+  }
+  to {
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.popup-animation {
+  animation: popup linear;
+  animation-timeline: view();
+  animation-range: entry 50% cover 55%; /* Start after the text begins to appear */
+  animation-fill-mode: both;
+}
+
+@keyframes fly-plane {
+  0% {
+    /* Start off-screen left, lower part of the sky */
+    transform: translateX(-5vw) translateY(60vh) rotateX(20deg) rotateY(0);
+    opacity: 1;
+  }
+  60% {
+    /* Flies to 40vw while climbing */
+    transform: translateX(30vw) translateY(40vh) rotateX(20deg) rotateY(-45deg);
+    opacity: 1;
+  }
+  100% {
+    /* Flies back towards the top left */
+    transform: translateX(55vw) translateY(30vh) rotateX(15deg) rotateY(-60deg);
+    opacity: 0;
+  }
+}
+.plane-animation {
+  animation: fly-plane 30s linear infinite;
+  animation-delay: 0;
+}
+
+@keyframes fade-in-dome {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dome-fade-in-animation {
+  /* A fade-in effect for the dome images */
+  animation: fade-in-dome 0.8s ease-in-out forwards;
+  opacity: 0; /* Start transparent before animation begins */
+}
+
+/* === Per-word rise-from-bottom on scroll === */
+@keyframes rise-from-bottom {
+  from {
+    scale: 1.5;
+    transform: translateY(var(--rise-from-y, 150%));
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes word-animate {
+  from {
+    transform: translateZ(-2px) scale(3) translateY(0%)
+      rotate(var(--rotate, -30deg));
+  }
+  to {
+    transform: translateZ(-2px) scale(3) translateY(-150%)
+      rotate(var(--rotate, -30deg));
+  }
+}
+
+/* === Per-character rise variant === */
+.chars-rise-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+/* Named timeline helpers for coordinating non-sticky chip with heading */
+.exp-timeline {
+  view-timeline-name: --exp;
+  view-timeline-axis: block;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+.subtitle-wrapper {
+  animation-timeline: --exp;
+  animation-range: entry 0% exit 100%;
+}
+
+.exp-char-rise {
+  display: inline-block;
+  animation-name: rise-from-bottom;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timeline: --exp;
+  animation-range: entry 0% exit 10%;
+  animation-delay: calc(var(--i, 0) * 20ms);
+}
+
+/* Chip should animate when it enters viewport, not via --exp */
+.chip-appear {
+  position: absolute;
+  bottom: var(--bottom, unset);
+  left: var(--left, unset);
+  right: var(--right, unset);
+  animation-name: word-animate;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timeline: --exp;
+  animation-range: entry 60% exit 80%;
+  animation-delay: calc(10 * 200ms);
+}
+
+.case-studies-timeline {
+  view-timeline-name: --case-studies;
+  view-timeline-axis: block;
+}
+
+.project-card {
+  animation: card-scroll-animation linear forwards;
+  animation-timeline: --case-studies;
+  animation-range: var(--start) var(--end);
+}
+
+@keyframes card-scroll-animation {
+  from {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  80% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  to {
+    transform: scale(0.9);
+    opacity: 1;
+    filter: blur(2px);
   }
 }

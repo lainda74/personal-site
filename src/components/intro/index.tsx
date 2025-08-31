@@ -1,34 +1,91 @@
 import Image from "next/image";
-// import { IKImage } from "imagekitio-react";
-
-// const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
-
-// if (!urlEndpoint) {
-//   throw new Error("Error: Please add urlEndpoint to .env or .env.local");
-// }
 
 export default function Intro() {
   return (
-    <section className="flex flex-col-reverse lg:flex-row justify-center lg:items-center px-10 lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full h-screen">
+    <section className="relative overflow-hidden h-screen animate-on-scroll intro-section-animation flex flex-col items-center mx-auto">
       <div>
-        <h1 className="text-6xl mb-4 font-Caveat_Brush">Lalinda Sampath Dias</h1>
-        <p className="text-base text-secondaryText font-lightt">Interested in Frontend Development, UI/UX and System Design. I&apos;m passionate about giving back so I share my learnings on Medium, and play on Dribble. Currently in Singapore. &#127480;&#127468;</p>
+        <Image
+          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/bg_kvSKk6D73.svg?updatedAt=1756652945837"
+          alt="Background pattern"
+          fill
+          className="absolute z-[-10] w-full h-full object-cover"
+          priority
+        />
+        <Image
+          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/SIA_0KDsJs1SP.webp?updatedAt=1756652639285"
+          alt="Flying plane"
+          width={80}
+          height={80}
+          className="absolute top-[15%] -left-20 plane-animation z-[-6] opacity-70"
+          priority
+        />
+        <Image
+          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/dome_NdhB573Wg.png?updatedAt=1756652946566"
+          alt="Dome background"
+          fill
+          className="absolute top-0 left-0 w-full h-full object-cover z-[-4] dome-fade-in-animation"
+          priority
+        />
+        <Image
+          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/floor_j36Gqhe5Z.png?updatedAt=1756652946360"
+          alt="main floor"
+          fill
+          className="absolute bottom-0 left-0 w-full h-[20%] object-cover z-[-1] dome-fade-in-animation scale-x-[-1]"
+          priority
+        />
       </div>
-      <Image
-        key="personal photo"
-        src="https://ik.imagekit.io/dsmblx6kfve/personal-site/profile__wLahsl6M.jpg?updatedAt=1737863573813"
-        alt="Profile Image"
-        width={140} // Replace with the actual width
-        height={140}
-        className="lg:ml-20 mb-6 lg:mb-0"
-        priority
-      />
-      
-      {/* <IKImage
-        urlEndpoint="https://ik.imagekit.io/dsmblx6kfve/personal-site/profile__wLahsl6M.jpg?updatedAt=1737863573813"
-        alt="Profile Image"
-        className=''
-      /> */}
+      <header
+        className="mt-5 flex items-center justify-center lg:flex-row h-12 z-30 
+  bg-black/30 backdrop-blur-md rounded-full"
+      >
+        <nav className="flex items-center">
+          <a
+            href="#case-studies"
+            className="text-white px-6 py-2 rounded-full transition-colors duration-300 hover:bg-white/20"
+          >
+            Projects
+          </a>
+          <a
+            href="#"
+            className="text-white px-6 py-2 rounded-full transition-colors duration-300 hover:bg-white/20"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="text-white px-6 py-2 rounded-full transition-colors duration-300 hover:bg-white/20"
+          >
+            Contact
+          </a>
+        </nav>
+      </header>
+
+      <div className="lg:px-0 px-10 lg:w-4/5 2xl:w-3/5 w-full flex items-center lg:flex-row h-full">
+        <div className="animate-on-scroll intro-text-animation text-left lg:w-3/5 lg:-mt-60 md:-mt-[60px] -mt-[240px]">
+          <h1 className="text-2xl mb-4 text-primaryText font-Playfair_Display">
+            Hi, I’m <span className="font-extrabold">Lalinda.</span>
+          </h1>
+          <h2 className="text-4xl mb-4 text-primaryText font-bold leading-[3rem]">
+            I bring ideas to life with seamless, <br /> delightful digital solutions.
+          </h2>
+          <div className="mt-5 relative h-8 w-full overflow-hidden text-lg font-medium text-left text-primaryText">
+            <div className="absolute flex items-center">
+              <span className="font-normal opacity-70 mr-3">Based in Singapore</span> <span className="font-medium opacity-100">&#127480;&#127468;</span>
+            </div>
+          </div>
+          <button className="button bg-buttonText py-3 px-6 rounded-2xl mt-6 text-white">Get to know me more?</button>
+        </div>
+        {/* <div className="lg:w-2/5 flex items-center justify-center animate-on-scroll intro-text-animation relative">
+          <Image
+            src="https://safetywing.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbird.5d59a86f.webp&w=3840&q=75"
+            alt="Hero illustration"
+            width={500}
+            height={500}
+            priority
+            className="w-full max-w-lg h-auto relative -mb-[250]"
+          />
+        </div> */}
+      </div>
     </section>
   );
 }

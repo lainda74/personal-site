@@ -2,37 +2,33 @@ import About from "@/components/about";
 import Articles from "@/components/Articles";
 import CaseStudies from "@/components/casestudies";
 import Experience from "@/components/experience";
-import FadeIn from "@/components/fadein";
+// import FadeIn from "@/components/fadein";
 import Footer from "@/components/footer";
 import Intro from "@/components/intro";
 import { Suspense } from "react";
+
+export const revalidate = 3600;
 
 export default function Home() {
   return (
     <div className="">
       <Intro />
       <Suspense fallback={<div>Loading...</div>}>
-        <FadeIn>
+        <section>
+          <Experience />
+        </section>
+        <section>
           <CaseStudies />
-        </FadeIn>
-        <FadeIn>
-          <div className="my-[12rem] motion-safe:animate-fade-in">
-            <Experience />
-          </div>
-        </FadeIn>
-        <FadeIn>
+        </section>
+        <section className="scroll-text">
           <Articles />
-        </FadeIn>
-        <FadeIn>
-          <div className="my-[8rem]">
-            <About />
-          </div>
-        </FadeIn>
-        <FadeIn>
-          <div className="mb-[4rem]">
-            <Footer />
-          </div>
-        </FadeIn>
+        </section>
+        <section className="scroll-text mt-32">
+          <About />
+        </section>
+        <section className="scroll-text mt-32 mb-[4rem]">
+          <Footer />
+        </section>
       </Suspense>
     </div>
   );

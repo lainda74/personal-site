@@ -1,142 +1,61 @@
-import Image from "next/image";
+
+import ProjectCard from "../projectCard";
+
+const projects = [
+  {
+    "title": "RouteSONAR",
+    "description": "RouteSONAR is an innovative route optimization platform developed to find the most efficient travel route out of all possible outcomes mapped across the multiple last mile delivery locations.",
+    "link": "https://www.behance.net/gallery/131223179/RouteSONAR-Route-Optimization-Web-Application",
+    "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/CS1_tF5BSPKeO.svg?updatedAt=1756652642972",
+    "roles": ["Frontend Developer", "Lo-fi & Hi-fi prototyping", "UI/UX"],
+    "tools": ["React JS", "Figma"]
+  },
+  {
+    "title": "Genie",
+    "description": "The platform that allows travellers to find their ideal campgrounds for their holidays and get recommendations based on their preferences.",
+    "link": "https://www.behance.net/gallery/121582261/Camp-Search-mobile-app",
+    "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/CS2_NJICDDqIgg.svg?updatedAt=1756652640331",
+    "roles": ["Lead Frontend Engineer", "UI/UX"],
+    "tools": ["Angular", "React"]
+  },
+  {
+    "title": "Axonect",
+    "description": "Axonect offers a suite of enterprise digital transformation products that seamlessly connect northbound and southbound systems. By leveraging Axonect’s cost-effective products, enterprises can become agile digital service providers and quickly launch new services with faster time-to-market, reduce operational costs, and optimize their operations, leading to a more efficient and effective footprint.",
+    "link": "https://www.behance.net/gallery/121582261/Camp-Search-mobile-app",
+    "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/cs3_rcYPZF_9c.svg?updatedAt=1756652640359",
+    "roles": ["Lo-fi & Hi-fi prototyping", "UI/UX Lead", "UI/UX"],
+    "tools": ["Figma", "Protopie"]
+  }
+];
 
 export default function CaseStudies() {
+
   return (
-    <section className="px-10 lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full">
-      <div>
+    <section
+      id="case-studies"
+      className="px-10 lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full my-8 relative"
+    >
+      <div className="text-center">
         <h6 className="text-md text-secondaryText mb-1">
           Projects Accomplished in My Free Time
         </h6>
-        <h2 className="text-5xl font-Playfair_Display font-bold">
+        <h2 className="text-5xl font-Playfair_Display font-bold text-primaryText">
           Case Studies
         </h2>
       </div>
-      <div className="mt-20">
-        <div className="md:mt-0 md:flex">
-          <Image
-            src="https://ik.imagekit.io/dsmblx6kfve/personal-site/Banner-1_GkmxtYtTD.jpg?updatedAt=1738245948245"
-            alt="Banner 1 Image"
-            width={520}
-            height={520}
-            className="md:pr-2 md:w-1/2 transition-transform duration-300 hover:scale-110 object-cover"
-            quality={100}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-            loading="lazy"
+
+      {/* Stack container */}
+      {/* The height is increased to allow space for the sticky cards to scroll over each other. */}
+      <div className="relative h-[300vh] case-studies-timeline">
+        {projects.map((project, idx) => (
+          <ProjectCard
+            key={idx}
+            index={idx}
+            {...project}
+            totalProjects={projects.length}
+            top={`calc(2rem + ${idx * 1}px)`}
           />
-          <div className="md:w-1/2 md:pl-8 pt-4 md:pt-0">
-            <h6 className="text-2xl font-bold mb-3">RouteSONAR</h6>
-            <p className="text-md text-secondaryText font-light">
-              RouteSONAR is an innovative route optimization platform developed
-              to find the most efficient travel route out of all possible
-              outcomes mapped across the multiple last mile delivery locations.
-            </p>
-            <a
-              href="https://www.behance.net/gallery/131223179/RouteSONAR-Route-Optimization-Web-Application"
-              className="md:flex mt-20 my-5 text-lg text-buttonText flex items-center"
-              rel="noreferrer"
-              target="_blank"
-            >
-              View Project{" "}
-              <Image
-                src="https://ik.imagekit.io/dsmblx6kfve/personal-site/view.face245a_rdVEXw_Ee.svg?updatedAt=1738382591186"
-                alt="Forward button image"
-                width={80}
-                height={20}
-                className="ml-5"
-                loading="lazy"
-              />
-            </a>
-            <div className="grid grid-cols-2 gap-4 mt-3 md:mt-12">
-              <div>
-                <span className="mb-2">Roles</span>
-                <ul>
-                  <li className="text-sm text-list font-light leading-6">
-                    Frontend Developer
-                  </li>
-                  <li className="text-sm text-list font-light leading-6">
-                    Lo-fi & Hi-fi prototyping
-                  </li>
-                  <li className="text-sm text-list font-light leading-6">
-                    UI/UX
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <span className="mb-2">Tools</span>
-                <ul>
-                  <li className="text-sm text-list font-light leading-6">
-                    React JS
-                  </li>
-                  <li className="text-sm text-list font-light leading-6">
-                    Figma
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mt-20 md:mt-0 md:flex pt-20">
-          <Image
-            src="https://ik.imagekit.io/dsmblx6kfve/personal-site/Banner-2_YR4VE_kGz.jpg?updatedAt=1738247020705"
-            alt="Banner 1 Image"
-            width={520}
-            height={520}
-            className="md:pr-2 md:w-1/2 transition-transform duration-300 hover:scale-110 object-cover"
-            quality={100}
-            loading="lazy"
-          />
-          <div className="md:w-1/2 md:pl-8 pt-4 md:pt-0">
-            <h6 className="text-2xl font-bold mb-3">CampMo</h6>
-            <p className="text-md text-secondaryText font-light">
-              The platform that allows travellers to find their ideal
-              campgrounds for their holidays and get recommendations based on
-              their preferences.
-            </p>
-            <a
-              href="https://www.behance.net/gallery/121582261/Camp-Search-mobile-app"
-              className="md:flex mt-20 my-5 text-lg text-buttonText flex items-center"
-              rel="noreferrer"
-              target="_blank"
-            >
-              View Project{" "}
-              <Image
-                src="https://ik.imagekit.io/dsmblx6kfve/personal-site/view.face245a_rdVEXw_Ee.svg?updatedAt=1738382591186"
-                alt="Forward button image"
-                width={80}
-                height={20}
-                className="ml-5"
-                loading="lazy"
-              />
-            </a>
-            <div className="grid grid-cols-2 gap-4 mt-3 md:mt-12">
-              <div>
-                <span className="mb-2">Roles</span>
-                <ul>
-                  <li className="text-sm text-list font-light leading-6">
-                    Lo-fi & Hi-fi prototyping
-                  </li>
-                  <li className="text-sm text-list font-light leading-6">
-                    UI/UX Lead
-                  </li>
-                  <li className="text-sm text-list font-light leading-6">
-                    UI/UX
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <span className="mb-2">Tools</span>
-                <ul>
-                  <li className="text-sm text-list font-light leading-6">
-                    Figma
-                  </li>
-                  <li className="text-sm text-list font-light leading-6">
-                    Protopie
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

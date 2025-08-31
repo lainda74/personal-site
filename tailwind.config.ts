@@ -20,7 +20,19 @@ export default {
         Caveat_Brush: "var(--font-caveat)",
         Work_Sans: "var(--font-worksans)",
         Playfair_Display: "var(--font-playfair)",
-      }
+      },
+      keyframes: {
+        slideText: {
+          "0%, 20%": { transform: "translateY(0%)" },
+          "25%, 45%": { transform: "translateY(-100%)" },
+          "50%, 70%": { transform: "translateY(-200%)" },
+          "75%, 95%": { transform: "translateY(-300%)" },
+          "100%": { transform: "translateY(0%)" },
+        },
+      },
+      animation: {
+        slideText: "slideText 12s infinite ease-in-out",
+      },
     },
   },
   plugins: [],
