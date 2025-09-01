@@ -2,8 +2,8 @@
 import { useEffect } from "react";
 
 type Options = {
-  containerSelector: string; // the section that defines --case-studies in CSS
-  cardSelector: string; // ".project-card"
+  containerSelector: string;
+  cardSelector: string;
 };
 
 export function useScrollTimelineFallback({
@@ -14,7 +14,7 @@ export function useScrollTimelineFallback({
     // If CSS scroll timelines are supported, do nothing.
     if ("animationTimeline" in document.documentElement.style) return;
 
-    const ScrollTl: any = (window as any).ScrollTimeline;
+    const ScrollTl = window.ScrollTimeline;
     if (!ScrollTl) return; // polyfill not available (or failed to load)
 
     const container = document.querySelector<HTMLElement>(containerSelector);

@@ -22,7 +22,8 @@ export function useScrollFallback({
     const [start, end] = range;
 
     elements.forEach((el) => {
-      const timeline = new (window as any).ScrollTimeline({
+      if (!window.ScrollTimeline) return;
+      const timeline = new window.ScrollTimeline({
         source: document.scrollingElement,
         orientation: "block",
         scrollOffsets: [
