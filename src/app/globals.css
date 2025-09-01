@@ -51,14 +51,16 @@
     border-radius: 2rem;
   }
 }
-.animate-on-scroll {
-  animation-timeline: view();
-  animation-fill-mode: both;
-  animation-timing-function: linear;
-}
-.intro-section-animation {
-  animation-name: reduce-width;
-  animation-range: exit 0% exit 60%;
+@supports (animation-timeline: auto) {
+  .animate-on-scroll {
+    animation-timeline: view();
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+  .intro-section-animation {
+    animation-name: reduce-width;
+    animation-range: exit 0% exit 60%;
+  }
 }
 
 @keyframes fade-slide-up {

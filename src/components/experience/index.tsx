@@ -1,6 +1,6 @@
 import type React from "react";
-import Image from "next/image";
 import ExperienceChip from "../experienceChip";
+import SafeImage from "@/hooks/buggySafari";
 
 const chipsData = [
   {
@@ -16,8 +16,8 @@ const chipsData = [
     },
     content: (
       <>
-        <Image
-          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/virtusa_IC_1sVK3v.svg?updatedAt=1756652639236"
+        <SafeImage
+          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/virtusa_IC_1sVK3v.svg"
           alt="Virtusa Logo"
           width={180}
           height={120}
@@ -39,7 +39,7 @@ const chipsData = [
     },
     content: (
       <>
-        <Image
+        <SafeImage
           src="https://ik.imagekit.io/dsmblx6kfve/personal-site/codegen_GirTFY4hw.svg?updatedAt=1756652639035"
           alt="CodeGen Logo"
           width={180}
@@ -62,7 +62,7 @@ const chipsData = [
     },
     content: (
       <>
-        <Image
+        <SafeImage
           src="https://ik.imagekit.io/dsmblx6kfve/personal-site/adl_Efg85x_O9.svg?updatedAt=1756652639160"
           alt="ADL Logo"
           width={180}
@@ -85,7 +85,7 @@ const chipsData = [
       "--right": "unset",
     },
     content: (
-      <Image
+      <SafeImage
         src="https://ik.imagekit.io/dsmblx6kfve/personal-site/zuellig_nqToG4CQF.svg?updatedAt=1756652639431"
         alt="Zuellig Logo"
         width={180}
