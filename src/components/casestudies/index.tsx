@@ -1,5 +1,6 @@
 
 import ProjectCard from "../projectCard";
+import ClientCardStack from "./ClientCardStack";
 
 const projects = [
   {
@@ -46,17 +47,17 @@ export default function CaseStudies() {
 
       {/* Stack container */}
       {/* The height is increased to allow space for the sticky cards to scroll over each other. */}
-      <div className="relative h-[300vh] case-studies-timeline">
+      <ClientCardStack>
         {projects.map((project, idx) => (
           <ProjectCard
             key={idx}
             index={idx}
             {...project}
             totalProjects={projects.length}
-            top={`calc(2rem + ${idx * 1}px)`}
+            top={`calc(2rem + ${idx * 24}px)`}
           />
         ))}
-      </div>
+      </ClientCardStack>
     </section>
   );
 }

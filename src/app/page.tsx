@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import { AnimateOnScroll } from "@/components/animateOnScroll";
 import Articles from "@/components/Articles";
 import CaseStudies from "@/components/casestudies";
 import Experience from "@/components/experience";
@@ -12,7 +13,9 @@ export const revalidate = 3600;
 export default function Home() {
   return (
     <div className="">
-      <Intro />
+      <AnimateOnScroll>
+        <Intro />
+      </AnimateOnScroll>
       <Suspense fallback={<div>Loading...</div>}>
         <section>
           <Experience />

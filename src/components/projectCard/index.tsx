@@ -1,4 +1,5 @@
-
+'use client'
+import { useScrollTimelineFallback } from "@/hooks/useReparseScrollTimeline";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,10 +26,13 @@ export default function ProjectCard({
   totalProjects,
   top,
 }: ProjectCardProps) {
-  // Calculate the start and end of the animation range for this card
-  // based on its index in the stack.
   const startRange = (index / totalProjects) * 100;
   const endRange = ((index + 1) / totalProjects) * 100;
+
+  useScrollTimelineFallback({
+    containerSelector: ".case-studies-timeline",
+    cardSelector: ".project-card",
+  });
 
   return (
     <div

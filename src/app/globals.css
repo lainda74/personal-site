@@ -41,31 +41,20 @@
   }
 }
 
+@keyframes reduce-width {
+  from {
+    transform: scaleX(1);
+    border-radius: 0rem;
+  }
+  to {
+    transform: scaleX(0.95);
+    border-radius: 2rem;
+  }
+}
 .animate-on-scroll {
   animation-timeline: view();
   animation-fill-mode: both;
   animation-timing-function: linear;
-}
-
-.intro-text-animation {
-  animation-name: fade-and-scale-out;
-  animation-range: exit 0% exit 40%;
-}
-
-.intro-image-animation {
-  animation-name: fade-out;
-  animation-range: exit 0% exit 60%;
-}
-
-@keyframes reduce-width {
-  from {
-    width: 100%;
-    border-radius: 0rem;
-  }
-  to {
-    width: 95%;
-    border-radius: 2rem;
-  }
 }
 .intro-section-animation {
   animation-name: reduce-width;
@@ -80,54 +69,6 @@
   animation: fade-slide-up linear;
   animation-timeline: view();
   animation-range: entry 20% entry 80%;
-  animation-fill-mode: both;
-}
-
-@keyframes diagonal-slide {
-  from {
-    opacity: 0;
-    /* X is fixed (left offset), Y grows with index */
-    transform: translateX(0px) translateY(calc(var(--i) * 12px + 40px));
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) translateY(0);
-  }
-}
-
-.angled-paragraph {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  font-size: 2rem;
-}
-
-.angled-paragraph span {
-  display: inline-block;
-  animation-name: diagonal-slide;
-  animation-timing-function: ease-out;
-  animation-duration: auto;
-  animation-fill-mode: both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 50%;
-}
-
-@keyframes popup {
-  from {
-    display: none;
-    opacity: 0;
-    transform: translateY(10px) scale(0.2);
-  }
-  to {
-    display: inline-block;
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-.popup-animation {
-  animation: popup linear;
-  animation-timeline: view();
-  animation-range: entry 50% cover 55%; /* Start after the text begins to appear */
   animation-fill-mode: both;
 }
 
@@ -243,12 +184,6 @@
   view-timeline-axis: block;
 }
 
-.project-card {
-  animation: card-scroll-animation linear forwards;
-  animation-timeline: --case-studies;
-  animation-range: var(--start) var(--end);
-}
-
 @keyframes card-scroll-animation {
   from {
     transform: scale(1);
@@ -264,4 +199,9 @@
     opacity: 1;
     filter: blur(2px);
   }
+}
+.project-card {
+  animation: card-scroll-animation linear forwards;
+  animation-timeline: --case-studies;
+  animation-range: var(--start) var(--end);
 }

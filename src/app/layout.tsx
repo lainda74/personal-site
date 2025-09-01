@@ -40,11 +40,15 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Lalinda Dias - Personal Portfolio</title>
+        {/* This script adds support for scroll-driven animations in all browsers */}
+        <Script
+          src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"
+          strategy="beforeInteractive"
+        />
       </head>
       <body
         className={`${playfair.variable} ${caveat.variable} ${worksans.variable} font-Work_Sans`}
       >
-        {/* ✅ Google Analytics Script */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3KRX0CFPJ5"
           strategy="afterInteractive"

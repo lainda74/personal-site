@@ -61,7 +61,7 @@ export default function Intro() {
       </header>
 
       <div className="lg:px-0 px-10 lg:w-4/5 2xl:w-3/5 w-full flex items-center lg:flex-row h-full">
-        <div className="animate-on-scroll intro-text-animation text-left lg:w-3/5 lg:-mt-60 md:-mt-[60px] -mt-[240px]">
+        <div className="text-left lg:w-3/5 lg:-mt-60 md:-mt-[60px] -mt-[240px]">
           <h1 className="text-2xl mb-4 text-primaryText font-Playfair_Display">
             Hi, I’m <span className="font-extrabold">Lalinda.</span>
           </h1>
@@ -75,16 +75,6 @@ export default function Intro() {
           </div>
           <button className="button bg-buttonText py-3 px-6 rounded-2xl mt-6 text-white">Get to know me more?</button>
         </div>
-        {/* <div className="lg:w-2/5 flex items-center justify-center animate-on-scroll intro-text-animation relative">
-          <Image
-            src="https://safetywing.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbird.5d59a86f.webp&w=3840&q=75"
-            alt="Hero illustration"
-            width={500}
-            height={500}
-            priority
-            className="w-full max-w-lg h-auto relative -mb-[250]"
-          />
-        </div> */}
       </div>
     </section>
   );
