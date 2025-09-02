@@ -12,7 +12,7 @@ const ExperienceChip: React.FC<ExperienceChipProps> = ({
   style,
 }) => {
   // The base classes are combined with any additional classes passed in.
-  const baseClasses = "mt-10 shadow-md chip-appear";
+  const baseClasses = "shadow-md chip-appear w-[12rem] h-[6rem]";
   const combinedClassName = [baseClasses, className].filter(Boolean).join(" ");
 
   return (

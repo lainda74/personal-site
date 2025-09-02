@@ -17,9 +17,7 @@ export default function Home() {
         <Intro />
       </AnimateOnScroll>
       <Suspense fallback={<div>Loading...</div>}>
-        <section>
-          <Experience />
-        </section>
+        <Experience />
         <section>
           <CaseStudies />
         </section>
