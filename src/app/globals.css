@@ -148,7 +148,7 @@
   animation-fill-mode: both;
   animation-timeline: --exp;
   animation-range: entry 0% exit 5%;
-  animation-delay: calc(var(--i, 0) * 20ms);
+  animation-delay: calc(var(--i, 0) * 1ms);
 }
 
 /* Chip should animate when it enters viewport, not via --exp */

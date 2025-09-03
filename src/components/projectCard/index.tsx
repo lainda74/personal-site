@@ -48,7 +48,7 @@ export default function ProjectCard({
       <div className="h-[80vh] w-[80vw] flex flex-col justify-center lg:flex-row gap-10 mx-auto p-8 bg-white rounded-2xl shadow-lg">
         <div className="lg:w-3/5">
           <div className="relative h-full w-full rounded-lg overflow-hidden">
-            <Image src={image} alt={title} layout="fill" />
+            <Image src={image} alt={title} layout="fill" loading="lazy" />
           </div>
         </div>
         <div className="lg:w-2/5 flex flex-col justify-center">

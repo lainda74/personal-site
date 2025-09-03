@@ -100,15 +100,15 @@ const chipsData = [
 
 export default function Experience() {
   return (
-      <section className="relative lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full h-[150vh] exp-timeline overflow-x-clip">
-        <div className="sticky top-0 h-[100vh] flex flex-col justify-center items-center gap-10">
+      <section className="relative lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full h-[200vh] exp-timeline">
+        <div className="sticky top-0 left-0 h-[100vh] flex flex-col justify-center items-center">
           <div className="subtitle-wrapper flex justify-end absolute top-[6rem] right-0">
             <p className="text-xl text-primaryText font-normal leading-[2rem] border-l-2 border-l-gray-300 pl-4 z-0">
               I have 10 years of experience working in tech <br />
               both in local and international levels.
             </p>
           </div>
-          <h1 className="text-[3.5rem] sm:text-[12rem] font-light exp-heading-timeline flex justify-center z-5">
+          <h1 className="text-[3.5rem] sm:text-[12rem] exp-heading-timeline flex justify-center z-5">
               {Array.from("Experience").map((ch, idx) => {
                 return (
                   <span
