@@ -34,7 +34,7 @@ export default function Intro() {
           priority
         />
       </div>
-      <header
+      {/* <header
         className="mt-5 flex items-center justify-center lg:flex-row h-12 z-30 
   bg-black/30 backdrop-blur-md rounded-full"
       >
@@ -58,7 +58,7 @@ export default function Intro() {
             Contact
           </a>
         </nav>
-      </header>
+      </header> */}
 
       <div className="lg:px-0 px-10 lg:w-4/5 2xl:w-3/5 w-full flex items-center lg:flex-row h-full">
         <div className="text-left lg:w-3/5 lg:-mt-60 md:-mt-[60px] -mt-[240px]">
