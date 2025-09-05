@@ -4,17 +4,9 @@ import ClientCardStack from "./ClientCardStack";
 
 const projects = [
   {
-    "title": "RouteSONAR",
-    "description": "RouteSONAR is an innovative route optimization platform developed to find the most efficient travel route out of all possible outcomes mapped across the multiple last mile delivery locations.",
-    "link": "https://www.behance.net/gallery/131223179/RouteSONAR-Route-Optimization-Web-Application",
-    "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/CS1_tF5BSPKeO.svg?updatedAt=1756652642972",
-    "roles": ["Frontend Developer", "Lo-fi & Hi-fi prototyping", "UI/UX"],
-    "tools": ["React JS", "Figma"]
-  },
-  {
     "title": "Genie",
     "description": "The platform that allows travellers to find their ideal campgrounds for their holidays and get recommendations based on their preferences.",
-    "link": "https://www.behance.net/gallery/121582261/Camp-Search-mobile-app",
+    "link": "https://www.genie.lk/",
     "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/CS2_NJICDDqIgg.svg?updatedAt=1756652640331",
     "roles": ["Lead Frontend Engineer", "UI/UX"],
     "tools": ["Angular", "React"]
@@ -22,10 +14,18 @@ const projects = [
   {
     "title": "Axonect",
     "description": "Axonect offers a suite of enterprise digital transformation products that seamlessly connect northbound and southbound systems. By leveraging Axonect’s cost-effective products, enterprises can become agile digital service providers and quickly launch new services with faster time-to-market, reduce operational costs, and optimize their operations, leading to a more efficient and effective footprint.",
-    "link": "https://www.behance.net/gallery/121582261/Camp-Search-mobile-app",
+    "link": "https://axonect.com/",
     "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/cs3_rcYPZF_9c.svg?updatedAt=1756652640359",
     "roles": ["Lo-fi & Hi-fi prototyping", "UI/UX Lead", "UI/UX"],
     "tools": ["Figma", "Protopie"]
+  },
+  {
+    "title": "RouteSONAR",
+    "description": "RouteSONAR is an innovative route optimization platform developed to find the most efficient travel route out of all possible outcomes mapped across the multiple last mile delivery locations.",
+    "link": "https://www.behance.net/gallery/131223179/RouteSONAR-Route-Optimization-Web-Application",
+    "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/CS1_tF5BSPKeO.svg?updatedAt=1756652642972",
+    "roles": ["Frontend Developer", "Lo-fi & Hi-fi prototyping", "UI/UX"],
+    "tools": ["React JS", "Figma"]
   }
 ];
 

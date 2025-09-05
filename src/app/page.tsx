@@ -18,9 +18,7 @@ export default function Home() {
       </AnimateOnScroll>
       <Suspense fallback={<div>Loading...</div>}>
         <Experience />
-        <section>
-          <CaseStudies />
-        </section>
+        <CaseStudies />
         <section className="scroll-text">
           <Articles />
         </section>
