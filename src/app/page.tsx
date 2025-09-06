@@ -13,9 +13,7 @@ export const revalidate = 3600;
 export default function Home() {
   return (
     <div className="">
-      <AnimateOnScroll>
-        <Intro />
-      </AnimateOnScroll>
+      <Intro />
       <Suspense fallback={<div>Loading...</div>}>
         <Experience />
         <CaseStudies />

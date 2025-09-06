@@ -5,21 +5,6 @@ export default function Intro() {
     <section className="relative overflow-hidden h-screen animate-on-scroll intro-section-animation flex flex-col items-center mx-auto">
       <div>
         <Image
-          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/bg_kvSKk6D73.svg?updatedAt=1756652945837"
-          alt="Background pattern"
-          fill
-          className="absolute z-[-10] w-full h-full object-cover opacity-0 fade-in-left [animation-delay:2.5s]"
-          priority
-        />
-        <Image
-          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/SIA_0KDsJs1SP.webp?updatedAt=1756652639285"
-          alt="Flying plane"
-          width={80}
-          height={80}
-          className="absolute top-[15%] -left-20 plane-animation z-[-6] opacity-0 fade-in-left [animation-delay:3.1s]"
-          priority
-        />
-        <Image
           src="https://ik.imagekit.io/dsmblx6kfve/personal-site/dome_NdhB573Wg.png?updatedAt=1756652946566"
           alt="Dome background"
           fill
@@ -32,6 +17,13 @@ export default function Intro() {
           fill
           className="absolute bottom-0 left-0 w-full h-[20%] object-cover z-[-1] scale-x-[-1] opacity-0 fade-in-left [animation-delay:2.9s]"
           priority
+        />
+        <Image
+          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/SIA_0KDsJs1SP.webp?updatedAt=1756652639285"
+          alt="Flying plane"
+          width={80}
+          height={80}
+          className="absolute top-[15%] -left-20 plane-animation z-[-6] opacity-0 fade-in-left [animation-delay:3.1s]"
         />
         <div className="absolute inset-0 bg-white/10 md:hidden"></div>
       </div>
