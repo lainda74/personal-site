@@ -38,10 +38,10 @@ export default function CaseStudies() {
     >
       <div className="text-center">
         <h6 className="text-md text-secondaryText mb-1">
-          Projects Accomplished in My Free Time
+          Some of the Projects Accomplished
         </h6>
         <h2 className="text-5xl font-Playfair_Display font-bold text-primaryText">
-          Case Studies
+          Projects
         </h2>
       </div>
 
