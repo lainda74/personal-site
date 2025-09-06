@@ -1,5 +1,5 @@
 import About from "@/components/about";
-import { AnimateOnScroll } from "@/components/animateOnScroll";
+// import { AnimateOnScroll } from "@/components/animateOnScroll";
 import Articles from "@/components/Articles";
 import CaseStudies from "@/components/casestudies";
 import Experience from "@/components/experience";
