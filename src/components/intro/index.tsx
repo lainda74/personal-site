@@ -1,16 +1,65 @@
+// 'use client';
+// import { useEffect } from "react";
 import Image from "next/image";
 
 export default function Intro() {
+  // useEffect(() => {
+  //   const waterfall = document.getElementById("waterfall");
+
+  //   if (!waterfall) return;
+
+  //   function createStream() {
+  //     const stream = document.createElement("div");
+  //     stream.classList.add("stream");
+
+  //     // Random position + speed
+  //     stream.style.left = Math.random() * 200 + "px";
+  //     stream.style.animationDuration = (Math.random() * 1.5 + 1.5) + "s";
+
+  //     waterfall?.appendChild(stream);
+
+  //     // Remove after animation ends
+  //     setTimeout(() => stream.remove(), 3000);
+  //   }
+
+  //   const interval = setInterval(createStream, 0.5);
+
+  //   return () => clearInterval(interval); // cleanup on unmount
+  // }, []);
+
   return (
     <section className="relative overflow-hidden h-screen animate-on-scroll intro-section-animation flex flex-col items-center mx-auto">
       <div>
-        <Image
-          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/dome_NdhB573Wg.png?updatedAt=1756652946566"
-          alt="Dome background"
-          fill
-          className="absolute top-0 left-0 w-full h-full object-cover z-[-4] opacity-0 fade-in-left [animation-delay:2.7s]"
-          priority
-        />
+        <div className="flex justify-center">
+          <Image
+            src="https://ik.imagekit.io/dsmblx6kfve/personal-site/dome_NdhB573Wg.png?updatedAt=1756652946566"
+            alt="Dome background"
+            fill
+            className="absolute top-0 left-0 w-full h-full object-cover z-[-4] opacity-0 fade-in-left [animation-delay:2.7s]"
+            priority
+          />
+          {/* <div id="waterfall" className="absolute top-[14%] w-[200px] h-[400px] overflow-hidden z-[-4]">
+            <style jsx>{`
+              .stream {
+                position: absolute;
+                top: -20px;
+                width: 2px;
+                height: 20px;
+                background: rgba(173, 216, 230, 0.8);
+                animation: fall linear forwards;
+              }
+
+              @keyframes fall {
+                from {
+                  top: -20px;
+                }
+                to {
+                  top: 100%;
+                }
+              }
+            `}</style>
+          </div> */}
+        </div>
         <Image
           src="https://ik.imagekit.io/dsmblx6kfve/personal-site/floor_j36Gqhe5Z.png?updatedAt=1756652946360"
           alt="main floor"

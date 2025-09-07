@@ -1,6 +1,7 @@
 import type React from "react";
 import ExperienceChip from "../experienceChip";
 import SafeImage from "@/hooks/buggySafari";
+import { BackgroundBeamsWithCollision } from "../ui/shadcn-io/background-beams-with-collision";
 
 const chipsData = [
   {
@@ -28,7 +29,7 @@ const chipsData = [
   {
     id: 2,
     className:
-      "flex items-center justify-center gap-3 px-12 py-3 rounded-full bg-blue-200 transform min-w-60 z-1 top-[20%] left-[60%]",
+      "flex items-center justify-center gap-3 px-12 py-3 rounded-full bg-blue-200 transform min-w-60 z-1 md:top-[20%] top-[24%] left-[60%]",
     style: {
       "--rotate": "7deg",
       "--scale-from": "2",
@@ -100,10 +101,14 @@ const chipsData = [
 
 export default function Experience() {
   return (
-      <section className="relative lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full h-[200vh] exp-timeline">
+    <>
+      <section className="relative lg:px-0 mx-auto w-full h-[200vh] exp-timeline lg:w-4/5 2xl:w-3/5">
         <div className="sticky top-0 left-0 h-[100vh] flex flex-col justify-center items-center">
+          <BackgroundBeamsWithCollision className="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <></>
+          </BackgroundBeamsWithCollision>
           <div className="subtitle-wrapper flex justify-end absolute top-[6rem] right-0">
-            <p className="text-xl text-primaryText font-normal leading-[2rem] border-l-2 border-l-gray-300 pl-4 z-0">
+            <p className="text-xl text-primaryText font-normal leading-[2rem] border-l-2 border-l-gray-300 pl-4 z-0 ">
               I have 10 years of experience working in tech <br />
               both in local and international levels.
             </p>
@@ -113,9 +118,7 @@ export default function Experience() {
                 return (
                   <span
                     key={idx}
-                    className={`${
-                      ch !== "E" ? "exp-char-rise" : ""
-                    } font-bold px-1`}
+                    className={`exp-char-rise font-bold px-1`}
                     style={
                       {
                         "--i": idx,
@@ -141,5 +144,6 @@ export default function Experience() {
           ))}
         </div>
       </section>
+    </>
   );
 }
