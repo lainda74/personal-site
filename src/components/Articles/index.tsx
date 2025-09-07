@@ -99,7 +99,7 @@ export default function Articles() {
           className="absolute top-0 left-0 w-full h-[35rem] object-cover"
           loading="lazy"
         /> */}
-        <div className="relative z-10 h-full mt-[8rem] lg:w-4/5 2xl:w-3/5 mx-auto px-8">
+        <div className="relative z-10 h-full mt-[8rem] lg:w-4/5 2xl:w-3/5 mx-auto">
           <div>
             <h6 className="text-md text-secondaryText mb-1">I Share</h6>
             <h2 className="text-5xl font-Playfair_Display font-bold">

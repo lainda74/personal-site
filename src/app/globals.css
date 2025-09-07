@@ -181,8 +181,43 @@
     opacity: 0;
   }
 }
+/* Mobile override */
+@media (max-width: 640px) {
+  @keyframes fly-plane {
+    0% {
+      transform: translateX(-5vw) translateY(50vh) rotateX(10deg) rotateY(0);
+      opacity: 1;
+    }
+    60% {
+      transform: translateX(60vw) translateY(46vh) rotateX(15deg) rotateY(-30deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(110vw) translateY(42vh) rotateX(10deg) rotateY(-45deg);
+      opacity: 0;
+    }
+  }
+}
+/* Mobile override */
+@media (min-width: 640px) and (max-width: 1024px) {
+  @keyframes fly-plane {
+    0% {
+      transform: translateX(-5vw) translateY(50vh) rotateX(10deg) rotateY(0);
+      opacity: 1;
+    }
+    60% {
+      transform: translateX(60vw) translateY(43vh) rotateX(15deg) rotateY(-30deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(110vw) translateY(36vh) rotateX(10deg) rotateY(-45deg);
+      opacity: 0;
+    }
+  }
+}
+
 .plane-animation {
-  animation: fly-plane 30s linear infinite;
+  animation: fly-plane 15s linear infinite;
   animation-delay: 0;
 }
 

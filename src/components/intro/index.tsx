@@ -78,7 +78,7 @@ export default function Intro() {
       </div>
 
       <div className="lg:px-0 px-10 lg:w-4/5 2xl:w-3/5 w-full flex items-center lg:flex-row h-full z-20">
-        <div className="text-left lg:w-3/5 lg:-mt-60 md:-mt-[60px] -mt-[240px] opacity-0 fade-in-left [animation-delay:0.5s]">
+        <div className="text-left lg:w-3/5 lg:-mt-60 md:-mt-[60px] -mt-[150px] opacity-0 fade-in-left [animation-delay:0.5s]">
           <div className="opacity-0 fade-in-left [animation-delay:0.7s]">
             <h1 className="text-2xl mb-4 text-primaryText font-Playfair_Display">
               Hi, I’m <span className="font-extrabold">Lalinda.</span>

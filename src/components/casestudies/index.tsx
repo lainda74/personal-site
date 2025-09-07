@@ -16,8 +16,8 @@ const projects = [
     "description": "Axonect offers a suite of enterprise digital transformation products that seamlessly connect northbound and southbound systems. By leveraging Axonect’s cost-effective products, enterprises can become agile digital service providers and quickly launch new services with faster time-to-market, reduce operational costs, and optimize their operations, leading to a more efficient and effective footprint.",
     "link": "https://axonect.com/",
     "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/cs3_rcYPZF_9c.svg?updatedAt=1756652640359",
-    "roles": ["Lo-fi & Hi-fi prototyping", "UI/UX Lead", "UI/UX"],
-    "tools": ["Figma", "Protopie"]
+    "roles": ["Frontend Lead", "UI/UX"],
+    "tools": ["Angular", "Figma", "Protopie"]
   },
   {
     "title": "RouteSONAR",
@@ -25,7 +25,7 @@ const projects = [
     "link": "https://www.behance.net/gallery/131223179/RouteSONAR-Route-Optimization-Web-Application",
     "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/CS1_tF5BSPKeO.svg?updatedAt=1756652642972",
     "roles": ["Frontend Developer", "Lo-fi & Hi-fi prototyping", "UI/UX"],
-    "tools": ["React JS", "Figma"]
+    "tools": ["React JS", "Next JS", "Figma"]
   }
 ];
 

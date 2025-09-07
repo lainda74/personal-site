@@ -113,7 +113,7 @@ export default function Experience() {
               both in local and international levels.
             </p>
           </div>
-          <h1 className="text-[3.5rem] sm:text-[12rem] exp-heading-timeline flex justify-center z-5">
+          <h1 className="text-[3.5rem] md:text-[8rem] sm:text-[12rem] exp-heading-timeline flex justify-center z-5">
               {Array.from("Experience").map((ch, idx) => {
                 return (
                   <span
