@@ -102,7 +102,7 @@ const chipsData = [
 export default function Experience() {
   return (
     <>
-      <section className="relative lg:px-0 mx-auto w-full h-[200vh] exp-timeline lg:w-4/5 2xl:w-3/5">
+      <section id="experience" className="relative lg:px-0 mx-auto w-full h-[200vh] exp-timeline lg:w-4/5 2xl:w-3/5">
         <div className="sticky top-0 left-0 h-[100vh] flex flex-col justify-center items-center">
           <BackgroundBeamsWithCollision className="absolute top-0 left-0 w-full h-full pointer-events-none">
             <></>
@@ -113,7 +113,7 @@ export default function Experience() {
               both in local and international levels.
             </p>
           </div>
-          <h1 className="text-[3.5rem] md:text-[8rem] sm:text-[12rem] exp-heading-timeline flex justify-center z-5">
+          <h1 className="text-[3.5rem] md:text-[10rem] sm:text-[12rem] exp-heading-timeline flex justify-center z-5">
               {Array.from("Experience").map((ch, idx) => {
                 return (
                   <span

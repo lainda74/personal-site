@@ -2,7 +2,7 @@
 
 export default function About() {
   return (
-    <section className="px-10 lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full">
+    <section id="about" className="px-10 lg:px-0 mx-auto lg:w-4/5 2xl:w-3/5 w-full">
       <div>
         <h6 className="text-md text-secondaryText mb-1">
           But Wait -

@@ -1,6 +1,7 @@
 // 'use client';
 // import { useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Intro() {
   // useEffect(() => {
@@ -35,7 +36,7 @@ export default function Intro() {
             src="https://ik.imagekit.io/dsmblx6kfve/personal-site/dome_NdhB573Wg.png?updatedAt=1756652946566"
             alt="Dome background"
             fill
-            className="absolute top-0 left-0 w-full h-full object-cover z-[-4] opacity-0 fade-in-left [animation-delay:2.7s]"
+            className="object-cover z-[-4] opacity-0 fade-in-left [animation-delay:2.7s]"
             priority
           />
           {/* <div id="waterfall" className="absolute top-[14%] w-[200px] h-[400px] overflow-hidden z-[-4]">
@@ -72,7 +73,7 @@ export default function Intro() {
           alt="Flying plane"
           width={80}
           height={80}
-          className="absolute top-[15%] -left-20 plane-animation z-[-6] opacity-0 fade-in-left [animation-delay:3.1s]"
+          className="absolute top-[15%] -left-20 plane-animation z-[-6] [animation-delay:3.1s]"
         />
         <div className="absolute inset-0 bg-white/10 md:hidden"></div>
       </div>
@@ -100,10 +101,10 @@ export default function Intro() {
               </div>
             </div>
           </div>
-          <div className="opacity-0 fade-in-left [animation-delay:1.3s]">
-            <button className="button bg-buttonText py-3 px-6 rounded-2xl mt-6 text-white">
+          <div className="opacity-0 fade-in-left [animation-delay:1.3s] mt-8">
+            <Link href={"#experience"} className="button bg-buttonText py-4 px-6 rounded-2xl text-white">
               Get to know me more?
-            </button>
+            </Link>
           </div>
         </div>
       </div>
