@@ -12,10 +12,12 @@ export default {
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
+			bg: 'linear-gradient(#b4edd8, #a0e8cd 4%, #82e1be 8%, #6adbb1 13%, #61a5fa 22%, #3676e0 28%, #326dec 33%, #2663eb 57%, #1e4fd8 73%, #1f41af 89%, #1f3b8a 100%, #1f3b8a)',
   			foreground: 'hsl(var(--foreground))',
   			primaryText: '#192735',
   			secondaryText: '#65727d',
-  			buttonText: '#e46f6f',
+  			btnBg: '#edcd68',
+			btnText: '#000',
   			list: '#777171',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
