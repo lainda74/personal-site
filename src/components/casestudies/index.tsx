@@ -5,7 +5,7 @@ import ClientCardStack from "./ClientCardStack";
 const projects = [
   {
     "title": "Genie",
-    "description": "The platform that allows travellers to find their ideal campgrounds for their holidays and get recommendations based on their preferences.",
+    "description": "Genie is the convenient, efficient, and smarter way to manage your finances, make easy bill payments, grow your wealth and track your loyalty points.",
     "link": "https://www.genie.lk/",
     "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/CS2_NJICDDqIgg.svg?updatedAt=1756652640331",
     "roles": ["Lead Frontend Engineer", "UI/UX"],
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     "title": "Axonect",
-    "description": "Axonect offers a suite of enterprise digital transformation products that seamlessly connect northbound and southbound systems. By leveraging Axonect’s cost-effective products, enterprises can become agile digital service providers and quickly launch new services with faster time-to-market, reduce operational costs, and optimize their operations, leading to a more efficient and effective footprint.",
+    "description": "Axonect offers a suite of enterprise digital transformation products that seamlessly connect northbound and southbound systems. Enterprises can become agile digital service providers and quickly launch new services with faster time-to-market, reduce operational costs, and optimize their operations, leading to a more efficient and effective footprint.",
     "link": "https://axonect.com/",
     "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/cs3_rcYPZF_9c.svg?updatedAt=1756652640359",
     "roles": ["Frontend Lead", "UI/UX"],

@@ -36,8 +36,16 @@ export default function Intro() {
             src="https://ik.imagekit.io/dsmblx6kfve/personal-site/dome_NdhB573Wg.png?updatedAt=1756652946566"
             alt="Dome background"
             fill
-            className="object-cover z-[-4] opacity-0 fade-in-left [animation-delay:2.7s]"
+            className="object-cover z-[-4] opacity-0 fade-in-left [animation-delay:2.7s] hidden md:block"
             priority
+          />
+          <Image
+            src="/dome-mobile.png"
+            alt="Dome mobile background"
+            fill
+            priority
+            className="object-cover z-[-4] block md:hidden"
+            sizes="100vw"
           />
           {/* <div id="waterfall" className="absolute top-[14%] w-[200px] h-[400px] overflow-hidden z-[-4]">
             <style jsx>{`
@@ -79,7 +87,7 @@ export default function Intro() {
       </div>
 
       <div className="lg:px-0 px-10 lg:w-4/5 2xl:w-3/5 w-full flex items-center lg:flex-row h-full z-20">
-        <div className="text-left lg:w-3/5 lg:-mt-60 md:-mt-[60px] -mt-[150px] opacity-0 fade-in-left [animation-delay:0.5s]">
+        <div className="text-left lg:w-3/5 lg:-mt-60 md:-mt-[60px] -mt-[250px] opacity-0 fade-in-left [animation-delay:0.5s]">
           <div className="opacity-0 fade-in-left [animation-delay:0.7s]">
             <h1 className="text-2xl mb-4 text-primaryText font-Playfair_Display">
               Hi, I’m <span className="font-extrabold">Lalinda.</span>

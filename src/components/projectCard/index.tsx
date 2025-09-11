@@ -37,7 +37,7 @@ export default function ProjectCard({
 
   return (
     <div
-      className="project-card sticky h-screen flex items-center justify-center"
+      className="project-card sticky h-[80vh] flex items-center justify-center"
       style={
         {
           top,
@@ -46,7 +46,7 @@ export default function ProjectCard({
         } as React.CSSProperties
       }
     >
-        <div className="min-h-[80vh] w-[80vw] flex flex-col justify-center lg:flex-row gap-10 mx-auto p-8 bg-white rounded-2xl border-4 shadow-lg">
+        <div className="min-h-[66vh] w-[80vw] flex flex-col justify-center lg:flex-row gap-10 mx-auto p-8 bg-white rounded-2xl border-4 shadow-lg">
           <div className="lg:w-3/5">
             <div className="relative h-full w-full rounded-lg overflow-hidden">
               <Image src={image} alt={title} layout="fill" loading="lazy" />

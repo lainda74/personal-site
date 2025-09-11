@@ -17,6 +17,6 @@ export default function ClientCardStack({ children }: { children: React.ReactNod
   });
 
   return (
-    <div className="relative h-[300vh] case-studies-timeline">{children}</div>
+    <div className="relative h-[240vh] case-studies-timeline">{children}</div>
   );
 }
