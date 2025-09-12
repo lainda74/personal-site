@@ -4,30 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Intro() {
-  // useEffect(() => {
-  //   const waterfall = document.getElementById("waterfall");
-
-  //   if (!waterfall) return;
-
-  //   function createStream() {
-  //     const stream = document.createElement("div");
-  //     stream.classList.add("stream");
-
-  //     // Random position + speed
-  //     stream.style.left = Math.random() * 200 + "px";
-  //     stream.style.animationDuration = (Math.random() * 1.5 + 1.5) + "s";
-
-  //     waterfall?.appendChild(stream);
-
-  //     // Remove after animation ends
-  //     setTimeout(() => stream.remove(), 3000);
-  //   }
-
-  //   const interval = setInterval(createStream, 0.5);
-
-  //   return () => clearInterval(interval); // cleanup on unmount
-  // }, []);
-
   return (
     <section className="relative overflow-hidden h-screen animate-on-scroll intro-section-animation flex flex-col items-center mx-auto">
       <div>
@@ -36,51 +12,36 @@ export default function Intro() {
             src="https://res.cloudinary.com/du2jhfevw/image/upload/v1757607497/dome_NdhB573Wg_4_mavrte.webp"
             alt="Dome background"
             fill
+            quality={100}
             className="object-cover z-[-4] opacity-0 fade-in-left [animation-delay:2.7s] hidden md:block"
+            sizes="100vw"
             priority
           />
           <Image
-            src="/dome-mobile.png"
+            src="https://res.cloudinary.com/du2jhfevw/image/upload/v1757648127/dome_NdhB573Wg_3_1_dsvml4.webp"
             alt="Dome mobile background"
             fill
+            quality={100}
             priority
             className="object-cover z-[-4] block md:hidden"
             sizes="100vw"
           />
-          {/* <div id="waterfall" className="absolute top-[14%] w-[200px] h-[400px] overflow-hidden z-[-4]">
-            <style jsx>{`
-              .stream {
-                position: absolute;
-                top: -20px;
-                width: 2px;
-                height: 20px;
-                background: rgba(173, 216, 230, 0.8);
-                animation: fall linear forwards;
-              }
-
-              @keyframes fall {
-                from {
-                  top: -20px;
-                }
-                to {
-                  top: 100%;
-                }
-              }
-            `}</style>
-          </div> */}
         </div>
         <Image
-          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/floor_j36Gqhe5Z.png?updatedAt=1756652946360"
+          src="https://res.cloudinary.com/du2jhfevw/image/upload/v1757656169/floor_j36Gqhe5Z_fvr0q7.png"
           alt="main floor"
           fill
+          quality={100}
           className="absolute bottom-0 left-0 w-full h-[20%] object-cover z-[-1] scale-x-[-1] opacity-0 fade-in-left [animation-delay:2.9s]"
           priority
+          sizes="100vw"
         />
         <Image
-          src="https://ik.imagekit.io/dsmblx6kfve/personal-site/SIA_0KDsJs1SP.webp?updatedAt=1756652639285"
+          src="https://res.cloudinary.com/du2jhfevw/image/upload/v1757656413/SIA_tjissh.png"
           alt="Flying plane"
           width={80}
           height={80}
+          quality={100}
           className="absolute top-[15%] -left-20 plane-animation z-[-6] [animation-delay:3.1s]"
         />
         <div className="absolute inset-0 bg-white/10 md:hidden"></div>

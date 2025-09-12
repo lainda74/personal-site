@@ -107,13 +107,13 @@ export default function Experience() {
           <BackgroundBeamsWithCollision className="absolute top-0 left-0 w-full h-full pointer-events-none">
             <></>
           </BackgroundBeamsWithCollision>
-          <div className="subtitle-wrapper flex justify-end absolute top-[6rem] right-0">
+          <div className="subtitle-wrapper flex justify-end absolute top-[6rem] left-50 right-50">
             <p className="text-xl text-primaryText font-normal leading-[2rem] border-l-2 border-l-gray-300 pl-4 z-0 ">
               I have 10 years of experience working in tech <br />
               both in local and international levels.
             </p>
           </div>
-          <h1 className="text-[3.5rem] md:text-[10rem] sm:text-[12rem] exp-heading-timeline flex justify-center z-5">
+          <h1 className="text-[3.5rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] exp-heading-timeline flex justify-center z-5">
               {Array.from("Experience").map((ch, idx) => {
                 return (
                   <span
