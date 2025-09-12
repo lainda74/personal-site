@@ -46,8 +46,8 @@ export default function ProjectCard({
         } as React.CSSProperties
       }
     >
-        <div className="min-h-[66vh] xs:min-h-[80vh] w-[80vw] flex flex-col justify-center lg:flex-row gap-10 mx-auto p-8 bg-white rounded-2xl border-4 shadow-lg">
-          <div className="lg:w-3/5">
+        <div className="md:min-h-[66vh] min-h-[50vh] h-fit w-[80vw] flex flex-col md:justify-center justify-start lg:flex-row gap-10 mx-auto p-8 bg-white rounded-2xl border-4 shadow-lg">
+          <div className="lg:w-3/5 hidden md:block">
             <div className="relative h-full w-full rounded-lg overflow-hidden">
               <Image src={image} alt={title} layout="fill" loading="lazy" />
             </div>

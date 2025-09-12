@@ -18,7 +18,7 @@ export default function Intro() {
             priority
           />
           <Image
-            src="https://res.cloudinary.com/du2jhfevw/image/upload/v1757648127/dome_NdhB573Wg_3_1_dsvml4.webp"
+            src="https://res.cloudinary.com/du2jhfevw/image/upload/v1757665053/dome-mobile_dyb7z2.png"
             alt="Dome mobile background"
             fill
             quality={100}
