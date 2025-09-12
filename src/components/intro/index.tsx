@@ -42,7 +42,7 @@ export default function Intro() {
           width={80}
           height={80}
           quality={100}
-          className="absolute top-[15%] -left-20 plane-animation z-[-6] [animation-delay:3.1s]"
+          className="absolute top-[15%] -left-20 plane-animation z-[-6] [animation-delay:3.1s] hidden md:block"
         />
         <div className="absolute inset-0 bg-white/10 md:hidden"></div>
       </div>

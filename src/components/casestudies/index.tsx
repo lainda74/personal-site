@@ -13,7 +13,7 @@ const projects = [
   },
   {
     "title": "Axonect",
-    "description": "Axonect offers a suite of enterprise digital transformation products that seamlessly connect northbound and southbound systems. Enterprises can become agile digital service providers and quickly launch new services with faster time-to-market, reduce operational costs, and optimize their operations, leading to a more efficient and effective footprint.",
+    "description": "Axonect provides enterprise digital transformation products that seamlessly connect northbound and southbound systems, enabling faster service launches, reduced costs, and optimized operations for greater efficiency.",
     "link": "https://axonect.com/",
     "image": "https://ik.imagekit.io/dsmblx6kfve/personal-site/cs3_rcYPZF_9c.svg?updatedAt=1756652640359",
     "roles": ["Frontend Lead", "UI/UX"],
