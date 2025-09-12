@@ -45,8 +45,6 @@ export default function CaseStudies() {
         </h2>
       </div>
 
-      {/* Stack container */}
-      {/* The height is increased to allow space for the sticky cards to scroll over each other. */}
       <ClientCardStack>
         {projects.map((project, idx) => (
           <ProjectCard

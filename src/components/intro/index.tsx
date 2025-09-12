@@ -13,7 +13,7 @@ export default function Intro() {
             alt="Dome background"
             fill
             quality={100}
-            className="object-cover z-[-4] opacity-0 fade-in-left [animation-delay:2.7s] hidden md:block"
+            className="object-cover z-[2] opacity-0 fade-in-left [animation-delay:2.7s] hidden md:block"
             sizes="100vw"
             priority
           />
@@ -23,7 +23,7 @@ export default function Intro() {
             fill
             quality={100}
             priority
-            className="object-cover z-[-4] block md:hidden"
+            className="object-cover z-[2] block md:hidden"
             sizes="100vw"
           />
         </div>
@@ -32,7 +32,7 @@ export default function Intro() {
           alt="main floor"
           fill
           quality={100}
-          className="absolute bottom-0 left-0 w-full h-[20%] object-cover z-[-1] scale-x-[-1] opacity-0 fade-in-left [animation-delay:2.9s]"
+          className="absolute bottom-0 left-0 w-full h-[20%] object-cover z-[4] scale-x-[-1] opacity-0 fade-in-left [animation-delay:2.9s]"
           priority
           sizes="100vw"
         />
@@ -42,7 +42,7 @@ export default function Intro() {
           width={80}
           height={80}
           quality={100}
-          className="absolute top-[15%] -left-20 plane-animation z-[-6] [animation-delay:3.1s] hidden md:block"
+          className="absolute top-[15%] -left-20 plane-animation z-1 [animation-delay:3.1s] hidden md:block"
         />
         <div className="absolute inset-0 bg-white/10 md:hidden"></div>
       </div>
