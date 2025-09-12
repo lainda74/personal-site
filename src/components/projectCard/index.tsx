@@ -37,7 +37,7 @@ export default function ProjectCard({
 
   return (
     <div
-      className="project-card sticky h-[80vh] xs:h-[95vh] flex items-center justify-center"
+      className="project-card sticky h-[80vh] xs:h-[95vh] flex justify-center"
       style={
         {
           top,
