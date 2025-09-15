@@ -1,7 +1,6 @@
 import type React from "react";
 import ExperienceChip from "../experienceChip";
 import SafeImage from "@/hooks/buggySafari";
-import { BackgroundBeamsWithCollision } from "../ui/shadcn-io/background-beams-with-collision";
 
 const chipsData = [
   {
@@ -104,9 +103,6 @@ export default function Experience() {
     <>
       <section id="experience" className="relative lg:px-0 mx-auto w-full h-[200vh] exp-timeline lg:w-4/5 2xl:w-3/5">
         <div className="sticky top-0 left-0 h-[100vh] flex flex-col justify-center items-center">
-          <BackgroundBeamsWithCollision className="absolute top-0 left-0 w-full h-full pointer-events-none">
-            <></>
-          </BackgroundBeamsWithCollision>
           <div className="subtitle-wrapper flex justify-end absolute top-[6rem] left-50 right-50">
             <p className="text-xl text-primaryText font-normal leading-[2rem] border-l-2 border-l-gray-300 pl-4 z-0 ">
               I have 10 years of experience working in tech <br />
