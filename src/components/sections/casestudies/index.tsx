@@ -1,5 +1,5 @@
 
-import ProjectCard from "../projectCard";
+import ProjectCard from "../../projectCard";
 import ClientCardStack from "./ClientCardStack";
 
 const projects = [
@@ -52,7 +52,7 @@ export default function CaseStudies() {
             index={idx}
             {...project}
             totalProjects={projects.length}
-            top={`calc(2rem + ${idx * 24}px)`}
+            top={`calc(6rem + ${idx * 24}px)`}
           />
         ))}
       </ClientCardStack>

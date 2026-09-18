@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Playfair_Display } from "next/font/google";
-import { Caveat_Brush } from "next/font/google";
-import { Work_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -17,17 +16,10 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const caveat = Caveat_Brush({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-caveat",
-  display: "swap",
-});
-
-const worksans = Work_Sans({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-worksans",
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -46,9 +38,7 @@ export default function RootLayout({
           strategy="beforeInteractive"
         />
       </head>
-      <body
-        className={`${playfair.variable} ${caveat.variable} ${worksans.variable} font-Work_Sans`}
-      >
+      <body className={`${playfair.variable} ${inter.variable} font-Inter`}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3KRX0CFPJ5"
           strategy="afterInteractive"

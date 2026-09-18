@@ -16,7 +16,8 @@ export default {
   			foreground: 'hsl(var(--foreground))',
   			primaryText: '#192735',
   			secondaryText: '#65727d',
-  			btnBg: '#edcd68',
+  			btnBg: '#fdeeb9ff',
+			btnBgHover: '#edcd68',
 			btnText: '#000',
   			list: '#777171',
   			card: {
@@ -59,8 +60,7 @@ export default {
   			}
   		},
   		fontFamily: {
-  			Caveat_Brush: 'var(--font-caveat)',
-  			Work_Sans: 'var(--font-worksans)',
+  			Inter: 'var(--font-inter)',
   			Playfair_Display: 'var(--font-playfair)'
   		},
   		keyframes: {

@@ -1,5 +1,5 @@
 import type React from "react";
-import ExperienceChip from "../experienceChip";
+import ExperienceChip from "../../experienceChip";
 import SafeImage from "@/hooks/buggySafari";
 
 const chipsData = [
@@ -101,7 +101,14 @@ const chipsData = [
 export default function Experience() {
   return (
     <>
-      <section id="experience" className="relative lg:px-0 mx-auto w-full h-[200vh] exp-timeline lg:w-4/5 2xl:w-3/5">
+      <section id="experience" className="relative lg:px-0 mx-auto w-full h-[200vh] exp-timeline">
+        <SafeImage
+          src="/tile.webp"
+          alt=""
+          fill
+          sizes="(min-width: 1536px) 60vw, (min-width: 1024px) 80vw, 100vw"
+          className="object-cover -z-10"
+        />
         <div className="sticky top-0 left-0 h-[100vh] flex flex-col justify-center items-center">
           <div className="subtitle-wrapper flex justify-end absolute top-[6rem] left-50 right-50">
             <p className="text-xl text-primaryText font-normal leading-[2rem] border-l-2 border-l-gray-300 pl-4 z-0 ">

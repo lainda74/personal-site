@@ -1,7 +1,7 @@
 'use client'
 import { useScrollTimelineFallback } from "@/hooks/useReparseScrollTimeline";
 import Image from "next/image";
-import Link from "next/link";
+import ButtonLink from "../ui/ButtonLink";
 // import { BackgroundGradient } from "../ui/shadcn-io/background-gradient";
 
 interface ProjectCardProps {
@@ -77,9 +77,9 @@ export default function ProjectCard({
                 </div>
               </div>
             </div>
-            <Link href={link} target="_blank" rel="noopener noreferrer" className="bg-btnBg text-[bg-btnText] font-semibold px-4 py-4 mt-16 rounded-2xl text-center">
+            <ButtonLink href={link} target="_blank" rel="noopener noreferrer" className="mt-16">
               View Project
-            </Link>
+            </ButtonLink>
           </div>
         </div>
     </div>

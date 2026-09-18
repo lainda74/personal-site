@@ -1,7 +1,7 @@
 // 'use client';
 // import { useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import ButtonLink from "../../ui/ButtonLink";
 
 export default function Intro() {
   return (
@@ -50,7 +50,7 @@ export default function Intro() {
       <div className="lg:px-0 px-10 lg:w-4/5 2xl:w-3/5 w-full flex items-center lg:flex-row h-full z-20">
         <div className="text-left lg:w-3/5 lg:-mt-60 md:-mt-[60px] -mt-[250px] opacity-0 fade-in-left [animation-delay:0.5s]">
           <div className="opacity-0 fade-in-left [animation-delay:0.7s]">
-            <h1 className="text-3xl mb-4 text-primaryText font-Caveat_Brush opacity-80">
+            <h1 className="text-3xl mb-4 text-primaryText opacity-80">
               Hi, I’m <span className="font-bold">Lalinda.</span>
             </h1>
           </div>
@@ -71,9 +71,9 @@ export default function Intro() {
             </div>
           </div>
           <div className="opacity-0 fade-in-left [animation-delay:1.3s] mt-8">
-            <Link href={"#experience"} className="button bg-btnBg py-4 px-6 rounded-2xl text-[bg-btnText] font-semibold">
+            <ButtonLink href={"#experience"}>
               Get to know me more
-            </Link>
+            </ButtonLink>
           </div>
         </div>
       </div>
