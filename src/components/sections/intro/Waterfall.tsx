@@ -15,17 +15,13 @@ export default function Waterfall() {
     const width = 300;
     const height = 800;
     const centerX = width / 2;
-    
-    // Particle state
-    let particles: any[] = [];
-    const maxParticles = 8000; // Even higher for "stream" effect
 
     const createStream = () => {
       const radius = Math.random() * 80 + 30; // Wider initial radius for top
       const angle = Math.random() * 2 * Math.PI;
-      
+
       return {
-        xOff: radius * Math.cos(angle), 
+        xOff: radius * Math.cos(angle),
         y: -50,
         oldY: -50,
         vy: Math.random() * 5 + 10,
@@ -35,6 +31,11 @@ export default function Waterfall() {
         opacity: Math.random() * 0.4 + 0.1
       };
     };
+
+    // Particle state
+    type Particle = ReturnType<typeof createStream>;
+    let particles: Particle[] = [];
+    const maxParticles = 8000; // Even higher for "stream" effect
 
     const render = () => {
       ctx.globalCompositeOperation = 'destination-out';
