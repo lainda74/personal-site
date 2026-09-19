@@ -20,7 +20,7 @@
     "imagekit": "^6.0.0",
     "imagekitio-react": "^4.2.0",
     "lucide-react": "^0.542.0",
-    "next": "15.1.5",
+    "next": "15.1.11",
     "next-cloudinary": "^6.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
